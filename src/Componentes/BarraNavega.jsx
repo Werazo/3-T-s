@@ -1,22 +1,24 @@
 import React from 'react';
+import { Barra, BotonBarra } from '../css/BarraNavegaStyle';
+
 const BarraNavega = () => {
     return ( 
         <>
-            <div>
+            <Barra>
                 <div>
-                    <button>
+                    <BotonBarra>
                         <h2>Tacos</h2>            
-                    </button>
+                    </BotonBarra>
 
-                    <button>
+                    <BotonBarra>
                         <h2>Tortas</h2>                
-                    </button>
+                    </BotonBarra>
 
-                    <button>
+                    <BotonBarra>
                         <h2>Tamales</h2>
-                    </button>
+                    </BotonBarra>
                 </div>
-            </div>
+            </Barra>
         </>
      );
 }

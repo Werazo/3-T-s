@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import './App.css'
 import BarraNavega from './Componentes/BarraNavega'
 
 function App() {
