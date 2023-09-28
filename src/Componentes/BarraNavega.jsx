@@ -1,11 +1,11 @@
 import React from 'react';
-import { Barra, BotonBarra } from '../css/BarraNavegaStyle';
+import { Barra, BotonBarra, ContenedorTitulo, ContenedorBotonBarra, Titulo } from '../css/BarraNavegaStyle';
 
 const BarraNavega = () => {
     return ( 
         <>
             <Barra>
-                <div>
+                <ContenedorBotonBarra>
                     <BotonBarra>
                         <h2>Tacos</h2>            
                     </BotonBarra>
@@ -17,7 +17,11 @@ const BarraNavega = () => {
                     <BotonBarra>
                         <h2>Tamales</h2>
                     </BotonBarra>
-                </div>
+                </ContenedorBotonBarra>
+
+                <ContenedorTitulo>
+                    <Titulo>Las 3 T´s</Titulo>
+                </ContenedorTitulo>
             </Barra>
         </>
      );

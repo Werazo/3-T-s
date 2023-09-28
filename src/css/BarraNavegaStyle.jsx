@@ -7,7 +7,7 @@ const Barra = styled.div`
     left: 0;
     width: 100%;
     height: 10vh;
-    background-color: #f6f1e0;
+    background-color: #faf7ee;
     box-shadow: 0px 0px 6px rgba(10, 10, 10, 0.4);
  
     @media(max-width: 60rem){ /* 950px */
@@ -21,17 +21,46 @@ const Barra = styled.div`
         position: relative;
         border-radius: 8px;
         height: 10vh;
-        width: 20vh;
+        width: 15vw;
         font-weight: 500;
         font-family: inherit;
         border-color: transparent;
-        background-color: #f6f1e0;
+        background-color: transparent;
         cursor: pointer;
 
         &:hover{
+            background-color: white;
             color: #8f6e03;
-            border-bottom-color: #bc9000;
+            border-bottom-color: #6e5504;
         }
     `;
 
-export {Barra, BotonBarra};
+    const ContenedorBotonBarra = styled.div`
+        display: flex;
+        border-radius: 8px;
+        height: 10vh;
+        width: 100%;
+        font-weight: 500;
+        font-family: inherit;
+        justify-content: space-around;
+        align-items: center;
+    `;
+
+    const ContenedorTitulo = styled.div`
+        display: flex;
+        border-radius: 8px;
+        height: 10vh;
+        width: 100%;
+        font-weight: 500;
+        font-family: inherit;
+        justify-content: right;
+        align-items: center;
+    `;
+
+    const Titulo = styled.h1`
+        display: flex;
+        margin-right: 5vw;
+        color: brown;
+    `;
+
+export {Barra, BotonBarra, ContenedorTitulo, ContenedorBotonBarra, Titulo};

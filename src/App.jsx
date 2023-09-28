@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import BarraNavega from './Componentes/BarraNavega'
+import Home from './Componentes/Home'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -7,9 +8,7 @@ function App() {
   return (
     <>
         <BarraNavega/>
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+        <Home/>
     </>
   )
 }
