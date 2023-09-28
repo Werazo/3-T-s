@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Barra = styled.div`
+const Barra = styled.nav`
     display: flex;
     position: fixed;
     top: 0;
@@ -11,9 +11,20 @@ const Barra = styled.div`
     box-shadow: 0px 0px 6px rgba(10, 10, 10, 0.4);
  
     @media(max-width: 60rem){ /* 950px */
-        justify-content: space-around;
-        height: 12vh;
+        font-size: 120%;
+        display: flex;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 50vw;
+        height: 100%;
+        background:  #faf7ee;
+        flex-direction: column;
         align-items: center;
+        justify-content: space-around;
+        box-shadow: 0px 0px 6px rgba(10, 10, 10, 0.4);
+        transition: transform .3s ease-in-out;
+        transform: translate(100%);
     }
 `;
 
@@ -23,15 +34,21 @@ const Barra = styled.div`
         height: 10vh;
         width: 15vw;
         font-weight: 500;
-        font-family: inherit;
         border-color: transparent;
         background-color: transparent;
         cursor: pointer;
+        align-items: center;
 
         &:hover{
             background-color: white;
             color: #8f6e03;
             border-bottom-color: #6e5504;
+        }
+
+        @media(max-width: 60rem){ /* 950px */
+            height: 100%;
+            width: 50vw;
+            align-items: center;
         }
     `;
 
@@ -44,6 +61,14 @@ const Barra = styled.div`
         font-family: inherit;
         justify-content: space-around;
         align-items: center;
+
+        @media(max-width: 60rem){ /* 950px */
+            height: 100%;
+            width: 50vw;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
     `;
 
     const ContenedorTitulo = styled.div`
@@ -55,12 +80,29 @@ const Barra = styled.div`
         font-family: inherit;
         justify-content: right;
         align-items: center;
+
+        @media(max-width: 60rem){ /* 950px */
+            height: 20%;
+            width: 50vw;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
     `;
 
     const Titulo = styled.h1`
         display: flex;
         margin-right: 5vw;
         color: brown;
+
+        @media(max-width: 60rem){ /* 950px */
+            font-size: medium;
+            height: 20%;
+            width: 50vw;
+            margin-right: 0;
+            flex-direction: column;
+            align-items: center;
+        }
     `;
 
 export {Barra, BotonBarra, ContenedorTitulo, ContenedorBotonBarra, Titulo};
