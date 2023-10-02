@@ -16,3 +16,5 @@ const ContenedorBase = styled.div`
         align-items: center;
     }
 `;
+
+export {ContenedorBase};

@@ -1,28 +1,39 @@
-import React from 'react';
-import { Barra, BotonBarra, ContenedorTitulo, ContenedorBotonBarra, Titulo } from '../css/BarraNavegaStyle';
+import React, { useState } from 'react';
+import { Barra, BotonBarra, ContenedorTitulo, ContenedorBotonBarra, Titulo, MenuIcon } from '../css/BarraNavegaStyle';
+import Menu from '../Img/menu.png'
+import '../css/Spread.css'
+
 
 const BarraNavega = () => {
+
+    const [abierto, cambiarAbierto] = useState(false);
+
     return ( 
         <>
-            <Barra>
-                <ContenedorBotonBarra>
-                    <BotonBarra>
-                        <h2>Tacos</h2>            
-                    </BotonBarra>
+            <div>
+                <MenuIcon src={Menu} onClick = {() => cambiarAbierto(!abierto)}/>
+                <Barra className={`menu ${abierto && 'spread'}`}>
+                    <ContenedorBotonBarra>
+                        <BotonBarra>
+                            <h2>Tacos</h2>            
+                        </BotonBarra>
 
-                    <BotonBarra>
-                        <h2>Tortas</h2>                
-                    </BotonBarra>
+                        <BotonBarra>
+                            <h2>Tortas</h2>                
+                        </BotonBarra>
 
-                    <BotonBarra>
-                        <h2>Tamales</h2>
-                    </BotonBarra>
-                </ContenedorBotonBarra>
+                        <BotonBarra>
+                            <h2>Tamales</h2>
+                        </BotonBarra>
+                    </ContenedorBotonBarra>
 
-                <ContenedorTitulo>
-                    <Titulo>Las 3 T´s</Titulo>
-                </ContenedorTitulo>
-            </Barra>
+                    <ContenedorTitulo>
+                        <Titulo>Las 3 T´s</Titulo>
+                    </ContenedorTitulo>
+                </Barra>
+            </div>
+
+            <script src='../hooks/useDesplegar.jsx'></script>
         </>
      );
 }
