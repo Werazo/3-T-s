@@ -1,0 +1,6 @@
+/*Para desplegar el menu*/
+.spread{
+    @media(max-width: 60rem){
+        transform: translateX(0) !important;
+    }
+}
