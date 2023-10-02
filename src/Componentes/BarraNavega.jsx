@@ -12,7 +12,7 @@ const BarraNavega = () => {
         <>
             <div>
                 <MenuIcon src={Menu} onClick = {() => cambiarAbierto(!abierto)}/>
-                <Barra className={`menu ${abierto && 'spread'}`}>
+                <Barra className={`${abierto && 'spread'}`}>
                     <ContenedorBotonBarra>
                         <BotonBarra>
                             <h2>Tacos</h2>            

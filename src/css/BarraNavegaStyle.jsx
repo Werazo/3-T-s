@@ -24,7 +24,7 @@ const Barra = styled.nav`
         justify-content: space-around;
         box-shadow: 0px 0px 6px rgba(10, 10, 10, 0.4);
         transition: transform .3s ease-in-out;
-        transform: translate(-100%);
+        transform: translateX(-100%);
     }
 `;
 
@@ -109,11 +109,11 @@ const Barra = styled.nav`
         font-size: 150%;
         position: fixed;
         top: 5%;
-        left: 93%;
+        left: 7%;
         color: black;
         border-radius: 3.5px;
-        width: 28px;
-        height: 28px;
+        width: 33px;
+        height: 33px;
         align-items: center;
         justify-content: center;
         display: flex;
@@ -121,7 +121,7 @@ const Barra = styled.nav`
         z-index: 100;
         box-shadow: 0px 0px 6px rgba(10, 10, 10, 0.4);
         cursor: pointer;
-        z-index: 0;
+        z-index:-1;
 
         @media(max-width: 60rem){ /* 950px */
             z-index: 1;
