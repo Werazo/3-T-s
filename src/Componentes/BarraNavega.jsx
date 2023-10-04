@@ -4,7 +4,7 @@ import Menu from '../Img/menu.png'
 import '../css/Spread.css'
 
 
-const BarraNavega = () => {
+const BarraNavega = ({Tacos, Tortas, Tamales}) => {
 
     const [abierto, cambiarAbierto] = useState(false);
 
@@ -14,7 +14,7 @@ const BarraNavega = () => {
                 <MenuIcon src={Menu} onClick = {() => cambiarAbierto(!abierto)}/>
                 <Barra className={`${abierto && 'spread'}`}>
                     <ContenedorBotonBarra>
-                        <BotonBarra>
+                        <BotonBarra href = {Tacos}>
                             <h2>Tacos</h2>            
                         </BotonBarra>
 
