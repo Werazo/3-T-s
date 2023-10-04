@@ -25,6 +25,7 @@ const Barra = styled.nav`
         box-shadow: 0px 0px 6px rgba(10, 10, 10, 0.4);
         transition: transform .3s ease-in-out;
         transform: translateX(-100%);
+        z-index: 10;
     }
 `;
 
@@ -124,7 +125,7 @@ const Barra = styled.nav`
         z-index:-1;
 
         @media(max-width: 60rem){ /* 950px */
-            z-index: 1;
+            z-index: 11;
         }
     `;
 

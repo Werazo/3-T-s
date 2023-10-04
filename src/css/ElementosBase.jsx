@@ -12,6 +12,7 @@ const ContenedorBase = styled.section`
     box-sizing: border-box;
     align-items: center;
     justify-content: center;
+    margin-bottom: 30px;
  
     @media(max-width: 60rem){ /* 950px */
         justify-content: center;
@@ -31,6 +32,7 @@ const ContenedorComida = styled.div`
     box-sizing: border-box;
  
     @media(max-width: 60rem){ /* 950px */
+        top: 0;
         justify-content: space-around;
         align-items: center;
         margin-bottom: 40px;
@@ -41,10 +43,11 @@ const ContenedorComida = styled.div`
 const ImgComida = styled.img`
     display: flex;
     align-items: center;
-    width: 35%;
+    width: 30%;
+    max-width: 500px;
 
     @media(max-width: 60rem){
-        width: 60%;
+        width: 60%
     }
 `;
 
