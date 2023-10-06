@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 import { Barra, BotonBarra, ContenedorTitulo, ContenedorBotonBarra, Titulo, MenuIcon } from '../css/BarraNavegaStyle';
 import Menu from '../Img/menu.png'
 import '../css/Spread.css'
+import { useNavigate } from 'react-router-dom';
 
-
-const BarraNavega = ({Tacos, Tortas, Tamales}) => {
+const BarraNavega = () => {
 
     const [abierto, cambiarAbierto] = useState(false);
+    const Navega = useNavigate();
 
     return ( 
         <>
@@ -14,15 +15,15 @@ const BarraNavega = ({Tacos, Tortas, Tamales}) => {
                 <MenuIcon src={Menu} onClick = {() => cambiarAbierto(!abierto)}/>
                 <Barra className={`${abierto && 'spread'}`}>
                     <ContenedorBotonBarra>
-                        <BotonBarra href = {Tacos}>
+                        <BotonBarra onClick={() => Navega('/Tacos')}>
                             <h2>Tacos</h2>            
                         </BotonBarra>
 
-                        <BotonBarra>
+                        <BotonBarra onClick={() => Navega('/Tortas')}>
                             <h2>Tortas</h2>                
                         </BotonBarra>
 
-                        <BotonBarra>
+                        <BotonBarra onClick={() => Navega('/Tamales')}>
                             <h2>Tamales</h2>
                         </BotonBarra>
                     </ContenedorBotonBarra>

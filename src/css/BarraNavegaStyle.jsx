@@ -9,6 +9,7 @@ const Barra = styled.nav`
     height: 10vh;
     background-color: #faf7ee;
     box-shadow: 0px 0px 6px rgba(10, 10, 10, 0.4);
+    z-index: 999;
  
     @media(max-width: 60rem){ /* 950px */
         font-size: 120%;
