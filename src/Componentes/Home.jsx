@@ -8,9 +8,15 @@ import Tam2 from '../Img/Tam2.jpg'
 import Xmark from '../Img/Xmark.svg'
 import '../css/General.css'
 
- const Home = ({id, src}) => {
+ const Home = ({props}) => {
 
     const [imagen, showImagen] = useState(false);
+    const [imagen1, showImagen1] = useState(false);
+    const [imagen2, showImagen2] = useState(false);
+    const [imagen3, showImagen3] = useState(false);
+    const [imagen4, showImagen4] = useState(false);
+    const [imagen5, showImagen5] = useState(false);
+    const [imagen6, showImagen6] = useState(false);
 
     return ( 
         <>
@@ -24,12 +30,12 @@ import '../css/General.css'
                     <h2 className="subtitulo">Galeria</h2>
 
                     <div className="contenedor_gallery">
-                        <img src= {T1}  className="gal_imgs" onClick = {() => showImagen(!imagen)}/>
-                        <img src= {T2}  className="gal_imgs" onClick = {() => showImagen(!imagen)}/>
-                        <img src= {Tor1}  className="gal_imgs" onClick = {() => showImagen(!imagen)}/>
-                        <img src= {Tor2}  className="gal_imgs" onClick = {() => showImagen(!imagen)}/>
-                        <img src= {Tam1}  className="gal_imgs" onClick = {() => showImagen(!imagen)}/>
-                        <img src= {Tam2}  className="gal_imgs" onClick = {() => showImagen(!imagen)}/>
+                        <img src= {T1} id='T1' className="gal_imgs" onClick = {() => (showImagen(!imagen), showImagen1(!imagen1))}/>
+                        <img src= {T2} id='T2' className="gal_imgs" onClick = {() => (showImagen(!imagen), showImagen2(!imagen2))}/>
+                        <img src= {Tor1} id='Tor1' className="gal_imgs" onClick = {() => (showImagen(!imagen), showImagen3(!imagen3))}/>
+                        <img src= {Tor2} id='Tor2' className="gal_imgs" onClick = {() => (showImagen(!imagen), showImagen4(!imagen4))}/>
+                        <img src= {Tam1} id='Tam1' className="gal_imgs" onClick = {() => (showImagen(!imagen), showImagen5(!imagen5))}/>
+                        <img src= {Tam2} id='Tam2' className="gal_imgs" onClick = {() => (showImagen(!imagen), showImagen6(!imagen6))}/>
                     </div>
                 </div>
 
@@ -37,9 +43,14 @@ import '../css/General.css'
 
             <section className={`img_light ${imagen && 'show'}`}>
                 <img src= {Xmark} className='xmark' id="img_xmark"/>
-                <img src= {src} className={`agregar_img ${imagen && 'show_img'}`}/>
-
+                <img src= {T1}  className={`agregar_img ${imagen1 && 'show_img'}`}/>
+                <img src= {T2}  className={`agregar_img ${imagen2 && 'show_img'}`}/>
+                <img src= {Tor1}  className={`agregar_img ${imagen3 && 'show_img'}`}/>
+                <img src= {Tor2}  className={`agregar_img ${imagen4 && 'show_img'}`}/>
+                <img src= {Tam1}  className={`agregar_img ${imagen5 && 'show_img'}`}/>
+                <img src= {Tam2}  className={`agregar_img ${imagen6 && 'show_img'}`}/>
             </section>
+
         </> 
     );
  }
