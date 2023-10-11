@@ -1,5 +1,6 @@
 /* Plantilla de Home */
 .Home{
+    position: relative;
     display: flex;
     width: 100vw;
     height: 100%;
@@ -8,6 +9,11 @@
     color: blanchedalmond;
     font-weight: 800;
     flex-direction: column;
+    text-align: center;
+    
+    @media(min-width: 1800px){ /* 950px */
+        top: 10vh;
+    }
 }
 
 
@@ -57,7 +63,15 @@
 /* Galeria */
 
 .gallery{
+    position: relative;
+    display: block;
     background-color: rgb(233, 222, 213);
+    box-sizing: border-box;
+    height: 60%;
+
+    @media(min-width: 1800px){ /* 950px */
+        top: 10vh;
+    }
 }
 
 .contenedor_gallery{
@@ -100,10 +114,8 @@
 
 #img_xmark{
     position: relative;
-    top: -40%;
-    left: -10%;
-    font-size: 150%;
-    color: white;
+    top: -30vh;
+    right: -40vw;
     cursor: pointer;
 }
 
@@ -116,6 +128,9 @@
 }
 
 .xmark{
-    width: 30px;
-    color: rgb(186, 14, 14);
+    width: 60px;
+    fill: white;
+    @media(min-width: 1800px){ /* 950px */
+        width: 30px;
+    }
 }

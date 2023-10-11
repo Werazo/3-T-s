@@ -18,6 +18,16 @@ import '../css/General.css'
     const [imagen5, showImagen5] = useState(false);
     const [imagen6, showImagen6] = useState(false);
 
+    const cerrar = () => (
+        showImagen(!imagen), 
+        showImagen1(), 
+        showImagen2(),
+        showImagen3(),
+        showImagen4(),
+        showImagen5(),
+        showImagen6() 
+        )
+
     return ( 
         <>
             <div className='Home'>
@@ -42,7 +52,7 @@ import '../css/General.css'
             </section>
 
             <section className={`img_light ${imagen && 'show'}`}>
-                <img src= {Xmark} className='xmark' id="img_xmark"/>
+                <img src= {Xmark} className='xmark' id="img_xmark" onClick = {() => (cerrar())}/>
                 <img src= {T1}  className={`agregar_img ${imagen1 && 'show_img'}`}/>
                 <img src= {T2}  className={`agregar_img ${imagen2 && 'show_img'}`}/>
                 <img src= {Tor1}  className={`agregar_img ${imagen3 && 'show_img'}`}/>
