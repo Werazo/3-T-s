@@ -77,15 +77,29 @@
 .contenedor_gallery{
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
+    flex-wrap: wrap;    
+    align-items: center;
+
+    @media(max-width: 60rem){ /* 950px */
+        flex-direction: column;
+    }
+}
+
+.contenedor{
+    border-bottom: 20px;
 }
 
 .gal_imgs{
     width: 30%;
+    height: 20vh;
     margin-top: 15px;
     box-shadow: 0px 0px 6px rgba(121, 57, 5, 0.3);
     cursor: pointer;
     object-fit: cover;
+
+    @media(max-width: 60rem){ /* 950px */
+        width: 80%;
+    }
 }
 
 .img_light{
@@ -106,7 +120,7 @@
     position: absolute;
     display: flex;
     object-fit: cover;
-    width: 60%;
+    width: 50%;
     border-radius: 10px;
     transform: scale(0);
     transition: transform .3s .2s;
@@ -121,6 +135,10 @@
 
 .show_img{
     transform: scale(1);
+
+    @media(min-width: 60rem){ /* 950px */
+        top: 16vh;
+    }
 }
 
 .show{
@@ -130,7 +148,7 @@
 .xmark{
     width: 60px;
     fill: white;
-    @media(min-width: 1800px){ /* 950px */
+    @media(max-width: 60rem){ /* 950px */
         width: 30px;
     }
 }
