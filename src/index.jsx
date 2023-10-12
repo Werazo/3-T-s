@@ -6,7 +6,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Tacos from './Componentes/Tacos.jsx';
 import Tortas from './Componentes/Tortas';
 import Tamales from './Componentes/Tamales';
-import Home from './Componentes/Home.jsx';
 import './index.css'
 
 WebFont.load({
@@ -24,7 +23,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path = '/Tacos' element = {<Tacos/>}/>
         <Route path = '/Tortas' element = {<Tortas/>}/>
         <Route path = '/Tamales' element = {<Tamales/>}/>
-        <Route path = '/' element = {<Home/>}/>
       </Routes>
 
 

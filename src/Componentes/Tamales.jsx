@@ -6,7 +6,7 @@ import '../css/General.css'
 const Tamales = () => {
     return ( 
     <>
-                    <ContenedorBase id='Tamales'>
+                    <ContenedorBase id='Tamales' className='Rutas'>
                         <Subtitulo>Tamales</Subtitulo>
 
                         <ContenedorComida>

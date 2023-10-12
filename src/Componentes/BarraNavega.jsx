@@ -15,6 +15,10 @@ const BarraNavega = () => {
                 <MenuIcon src={Menu} onClick = {() => cambiarAbierto(!abierto)}/>
                 <Barra className={`${abierto && 'spread'}`}>
                     <ContenedorBotonBarra>
+                    <BotonBarra onClick={() => Navega('/')}>
+                            <h2>Home</h2>            
+                        </BotonBarra>
+
                         <BotonBarra onClick={() => Navega('/Tacos')}>
                             <h2>Tacos</h2>            
                         </BotonBarra>

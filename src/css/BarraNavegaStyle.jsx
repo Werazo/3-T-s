@@ -48,7 +48,7 @@ const Barra = styled.nav`
         }
 
         @media(max-width: 60rem){ /* 950px */
-            height: 100%;
+            height: 17%;
             width: 50vw;
             align-items: center;
         }
@@ -65,7 +65,7 @@ const Barra = styled.nav`
         align-items: center;
 
         @media(max-width: 60rem){ /* 950px */
-            height: 100%;
+            height: 80%;
             width: 50vw;
             flex-direction: column;
             justify-content: space-evenly;

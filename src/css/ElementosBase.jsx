@@ -1,10 +1,4 @@
 import styled from "styled-components";
-import T1 from '../Img/T1.jpg'
-import T2 from '../Img/T2.jpg'
-import Tor1 from '../Img/Tor1.jpg'
-import Tor2 from '../Img/Tor2.jpg'
-import Tam1 from '../Img/Tam1.jpg'
-import Tam2 from '../Img/Tam2.jpg'
 
 const ContenedorBase = styled.section`
     display: flex;
@@ -18,7 +12,6 @@ const ContenedorBase = styled.section`
     box-sizing: border-box;
     align-items: center;
     justify-content: center;
-    margin-bottom: 30px;
  
     @media(max-width: 60rem){ /* 950px */
         justify-content: center;

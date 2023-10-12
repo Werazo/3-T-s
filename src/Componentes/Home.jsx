@@ -8,7 +8,7 @@ import Tam2 from '../Img/Tam2.jpg'
 import Xmark from '../Img/Xmark.svg'
 import '../css/General.css'
 
- const Home = ({props}) => {
+ const Home = () => {
 
     const [imagen, showImagen] = useState(false);
     const [imagen1, showImagen1] = useState(false);

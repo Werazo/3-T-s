@@ -16,6 +16,13 @@
     }
 }
 
+.Rutas{
+    margin-top: 50px;
+
+    @media(min-width: 1800px){ /* 950px */
+        margin-top: 200px;
+    }
+}
 
 /*Comida*/
 .food{
@@ -68,6 +75,7 @@
     background-color: rgb(233, 222, 213);
     box-sizing: border-box;
     height: 60%;
+    padding-bottom: 30px;
 
     @media(min-width: 1800px){ /* 950px */
         top: 10vh;
