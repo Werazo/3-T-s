@@ -160,3 +160,175 @@
         width: 30px;
     }
 }
+
+/*--Pie--*/
+footer{
+    position: relative;
+    background-color: rgb(250, 179, 120);
+    padding-bottom: 1px;
+    bottom: -11vh;
+}
+
+#foot_cont{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    flex-wrap: wrap;
+}
+
+.contact_us{
+    width: 40%;
+    color: white;
+}
+
+.contact_us p{
+    font-weight: 200;
+    width: 50%;
+}
+
+.brand{
+    font-weight: 500;
+    font-size: 230%;
+}
+
+.social_media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social_m_icon{
+    text-decoration: none;
+    margin: 10px;
+    padding: 2px;
+    font-size: 200%;
+    color: white;
+    border-radius: 50%;
+}
+
+.social_m_icon:hover{
+    color: rgb(250, 179, 120);
+    background-color: white;
+}
+
+.line{
+    position: relative;
+    background-color: white;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0;
+    height: 2px;
+    margin-bottom: 30px;
+    left: 50%;
+        transform: translate(-50%, 0%);
+}
+
+/*Responsive*/
+@media screen and (max-width: 800px){
+/*inicio y menu*/
+    #menu_img{
+        left: 80%;
+        z-index: 110;
+    }
+
+    .menu{
+        width: 50vw;
+        z-index: 100;
+    }
+
+    .titulo{
+        font-size: 40px;
+    }
+
+/*contenido*/
+    .contenedor_food img{
+        width: 80%;
+        margin-bottom: 40px;
+    }
+
+    .checklist_food{
+        width: 80%;
+    }
+
+    .more_food{
+        margin-bottom: 30px;
+    }
+    
+    .agregar_img{
+        width: 80%;
+    }
+
+    .gal_imgs{
+        width: 45%;
+    }
+
+    #img_xmark{
+        top: -30%;
+        left: -2.5%;
+    }
+
+    .cont_more_food{
+        width: 80%;
+    }
+
+    /*Final or foot*/
+    #foot_cont{
+        justify-content: center;
+    }
+    
+    .social_media{
+        width: 80%;
+        justify-content: space-evenly;
+    }
+
+    .social_m_icon{
+        margin-left: 0;
+    }
+
+    .contact_us{
+        position: relative;
+        text-align: center;
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    .contact_us p{
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+}
+@media screen and (max-width: 400px){
+    
+    .menu{
+        width: 65vw;
+    }
+
+    #titulo{
+        font-size: 200%;
+    }
+
+    .subtitulo{
+        font-size: 150%;
+    }
+
+    #prin_p{
+        font-size: 90%;
+    }
+
+    .gal_imgs{
+        width: 75%;
+    }
+
+    .brand{
+        margin-bottom: 8px;
+    }
+
+    .contact_us{
+        font-size: 70%;
+    }
+}
+
+.SocialIcon{
+    width: 50px;
+}
