@@ -17,28 +17,34 @@ const Tamales = () => {
                                 <div className="food">
                                     <h3 className="n_food"><span className="number">1</span> Asi son los Tamales</h3>
                                     <p>
-                                        El taco es una preparación culinaria muy popular de México 
-                                        que consiste en una tortilla, generalmente de maíz, 
-                                        que comúnmente se enrolla para contener dentro diversos 
-                                        ingredientes y algún tipo de salsa y verdura.
+                                        El taco es una preparación culinaria muy popular de México. 
+                                        Está hecho a base de masa de Maíz que se rellena con diferentes ingredientes, 
+                                        como carnes, chiles, verduras, frutas, salsas, entre otros. Esta mezcla se envuelve en hojas, 
+                                        comúnmente de maíz o de plátano, y luego se cocina, generalmente al vapor.
                                     </p>
                                 </div>
                                 <div className="food">
                                     <h3 className="n_food"><span className="number">2</span> Historia</h3>
                                     <p>
-                                        En diferentes culturas se desarrolló la tradición de una preparación 
-                                        a base de harina que aporta carbohidratos hecha de tal manera que 
-                                        queda como una superficie plana que sirve de sostén para otros alimentos.
-                                        Así, se puede comparar el taco con el shawarma de origen turco.
+                                        El origen del tamal se remonta a las antiguas civilizaciones de México, especialmente a los pueblos indígenas de Mesoamérica, 
+                                        como los mayas y los aztecas, 
+                                        así como a otros pueblos de regiones como el área andina.
                                     </p>
                                 </div>
                                 <div className="food">
                                     <h3 className="n_food"><span className="number">3</span> Tipos de Tamales</h3>
                                     <p>
-                                        Se pueden distinguir algunos tipos particulares, 
-                                        basados en su tipo de carne o en su preparación. Hay quienes consi deran que un taco 
-                                        nace con el «mero acto» de 
-                                        envolver o enrollar un guiso con una tortilla.
+                                    Tamales de Elote: Masa hecha con maíz tierno, más dulce y menos densa.
+                                    <br/>
+                                    Tamales Oaxaqueños: Rellenos de mole negro y envueltos en hojas de plátano.
+                                    <br/>
+                                    Tamales de Rajas con Queso: Rellenos de tiras de chile poblano y trozos de queso.
+                                    <br/>
+                                    Tamales de Mole: Con pollo o cerdo y salsa de mole.
+                                    <br/>
+                                    Tamales Dulces: Tintados de rosa o marrón, con pasas, frutas o chocolate.
+                                    <br/>
+                                    Tamales de Zacahuil: Un tamal gigante, originario de la Huasteca.
                                     </p>
                                 </div>
                             </div>
